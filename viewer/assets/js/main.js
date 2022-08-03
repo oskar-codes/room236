@@ -346,7 +346,7 @@ var main = (function($) { var _ = {
 
     // Return.
 			_.$return.on('click', function() {
-				window.location.href = '/portfolios';
+				window.location.href = '/#/portfolios';
 			});
 
 			// Prevent event from bubbling up to "hide event on tap" event.

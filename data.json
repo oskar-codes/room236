@@ -1,17 +1,17 @@
 {
-  "homepage_images": ["01.jpg", "05.jpg", "03.jpg", "04.jpg"],
+  "homepage_images": ["cover-site-1.jpg", "cover-site-2.jpg", "cover-site-3.jpg", "cover-site-4.jpg", "cover-site-5.jpg", "cover-site-6.jpg"],
   "portfolios": [
     {
-      "image": "06.jpg",
+      "image": "cover-ns.jpg",
       "text": "NO STANDARD",
-      "images": ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg", "06.jpg"],
-      "caption": "\"Memory believes before knowing remembers. Believes longer than recollects, longer than knowing even wonders.\"\nWilliam Faulkner, *Light in August*"
+      "images": ["ns-1.jpg", "ns-2.jpg", "ns-3.jpg", "ns-5.jpg", "ns-7.jpg", "ns-8.jpg", "ns-10.jpg", "ns-11.jpg", "ns-12.jpg", "ns-13.jpg", "ns-15.jpg", "ns-16.jpg", "ns-17.jpg", "ns-18.jpg", "ns-19.jpg", "ns-20.jpg", "ns-21.jpg", "ns-22.jpg", "nsv-1.jpg", "nsv-2.jpg", "nsv-4.jpg", "nsv-5.jpg", "nsv-6.jpg"],
+      "caption": "“Memory believes before knowing remembers. Believes longer than recollects, longer than knowing even wonders.”\nWilliam Faulkner, *Light in August*"
     },
     {
-      "image": "07.jpg",
+      "image": "cover-fr.jpg",
       "text": "KEEP THIS FREQUENCY CLEAR",
-      "images": ["07.jpg", "08.jpg", "09.jpg", "10.jpg", "11.jpg", "12.jpg"],
-      "caption": ""
+      "images": ["fr-1.jpg", "fr-2.jpg", "fr-3.jpg", "fr-4.jpg", "fr-5.jpg", "fr-6.jpg", "fr-7.jpg", "fr-8.jpg", "fr-9.jpg", "fr-10.jpg", "fr-11.jpg", "fr-12.jpg", "fr-13.jpg", "fr-14.jpg", "fr-15.jpg", "fr-16.jpg"],
+      "caption": "“Sometimes I see something so moving I know I’m not supposed to linger. See it and leave. If you stay too long, you wear out the wordless shock. Love it and trust it and leave.”\nDon DeLillo, *Underworld*"
     }
   ]
 }
