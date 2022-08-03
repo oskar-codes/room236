@@ -881,7 +881,6 @@ input, select, textarea {
 			height: 64px;
 			background-image: url(../../../favicon.ico);
       background-size: cover;
-      filter: invert(1);
       background-position: center;
 			cursor: pointer;
 			z-index: 9999999;
