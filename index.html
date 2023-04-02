@@ -7,12 +7,16 @@
     <title>Room 236</title>
 
     <style>
+      @font-face {
+        font-family: Rajdhani;
+        src: url(assets/Rajdhani-Medium.ttf);
+      }
       h1 {
         text-align: center;
         font-size: 100px;
         margin: 0;
         margin-bottom: 30px;
-        font: sans-serif;
+        font: Rajdhani;
       }
       h1 span {
         color: #888;
@@ -21,6 +25,7 @@
       img {
         width: 100%;
         display: block;
+        cursor: pointer;
       }
       main {
         margin: 0 auto;
@@ -45,9 +50,17 @@
     </style>
 
     <script defer>
+
+      // preload gif
+      const image = new Image();
+      image.src = 'assets/3Rth.gif';
+
       window.addEventListener('load', () => {
         const image = document.querySelector('img');
         const glitch = document.querySelector('.glitch');
+
+        glitch.style.display = 'none';
+
         const sources = [
           "L1000378",
           "L1000425-Edit",
