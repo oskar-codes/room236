@@ -5,9 +5,80 @@
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Room 236</title>
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 100px;
+        margin: 0;
+        margin-bottom: 30px;
+        font: sans-serif;
+      }
+      h1 span {
+        color: #888;
+      }
+
+      img {
+        width: 100%;
+        display: block;
+      }
+      main {
+        margin: 0 auto;
+        width: 55%;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .glitch {
+        position: absolute;
+        background-image: url(assets/3Rth.gif);
+        background-size: cover;
+      }
+      @media screen and (max-width: 768px)  {
+        h1 {
+          font-size: 60px;
+        }
+        main {
+          width: 90%;
+        }
+      }
+    </style>
+
+    <script defer>
+      const image = document.querySelector('img');
+      const glitch = document.querySelector('.glitch');
+      const sources = [
+        "L1000378",
+        "L1000425-Edit",
+        "L1000989_57396",
+        "L1001034-Edit",
+        "L1001851-Edit",
+        "L1001922_61694",
+        "L1002648_63996-Edit",
+        "L1003802_48837",
+        "L1004733_77920"
+      ];
+      image.src = "nostandard/images/large/" + sources[Math.floor(Math.random() * sources.length)];
+
+      image.addEventListener('click', e => {
+        const rect = image.getBoundingClientRect();
+        glitch.style.left = rect.x + 'px';
+        glitch.style.top = rect.y + 'px';
+        glitch.style.width = rect.width + 'px';
+        glitch.style.height = rect.height + 'px';
+        glitch.style.display = 'block';
+
+        setTimeout(e => {
+          window.location.href = '/nostandard';
+        }, 500);
+      });
+    </script>
   </head>
   <body>
-    Room 236
+    <main>
+      <h1>Room <span>236</span></h1>
+      <img src="">
+    </main>
+    <div class="glitch" style="display: none;"></div>
   </body>
 </html>
