@@ -45,39 +45,41 @@
     </style>
 
     <script defer>
-      const image = document.querySelector('img');
-      const glitch = document.querySelector('.glitch');
-      const sources = [
-        "L1000378",
-        "L1000425-Edit",
-        "L1000989_57396",
-        "L1001034-Edit",
-        "L1001851-Edit",
-        "L1001922_61694",
-        "L1002648_63996-Edit",
-        "L1003802_48837",
-        "L1004733_77920"
-      ];
-      image.src = "nostandard/images/large/" + sources[Math.floor(Math.random() * sources.length)];
-
-      image.addEventListener('click', e => {
-        const rect = image.getBoundingClientRect();
-        glitch.style.left = rect.x + 'px';
-        glitch.style.top = rect.y + 'px';
-        glitch.style.width = rect.width + 'px';
-        glitch.style.height = rect.height + 'px';
-        glitch.style.display = 'block';
-
-        setTimeout(e => {
-          window.location.href = '/nostandard';
-        }, 500);
+      window.addEventListener('load', () => {
+        const image = document.querySelector('img');
+        const glitch = document.querySelector('.glitch');
+        const sources = [
+          "L1000378",
+          "L1000425-Edit",
+          "L1000989_57396",
+          "L1001034-Edit",
+          "L1001851-Edit",
+          "L1001922_61694",
+          "L1002648_63996-Edit",
+          "L1003802_48837",
+          "L1004733_77920"
+        ];
+        image.src = "nostandard/images/large/" + sources[Math.floor(Math.random() * sources.length)];
+  
+        image.addEventListener('click', e => {
+          const rect = image.getBoundingClientRect();
+          glitch.style.left = rect.x + 'px';
+          glitch.style.top = rect.y + 'px';
+          glitch.style.width = rect.width + 'px';
+          glitch.style.height = rect.height + 'px';
+          glitch.style.display = 'block';
+  
+          setTimeout(e => {
+            window.location.href = '/nostandard';
+          }, 500);
+        });
       });
     </script>
   </head>
   <body>
     <main>
       <h1>Room <span>236</span></h1>
-      <img src="">
+      <img src="" />
     </main>
     <div class="glitch" style="display: none;"></div>
   </body>
